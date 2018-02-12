@@ -70,6 +70,11 @@ ul {
     width: 25vw;
 }
 
+@media (max-width: 700px) {
+    textarea {
+        width: 150px;
+    }
+}
 button {
     margin: 20px 0;
 }
