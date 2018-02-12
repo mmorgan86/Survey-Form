@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Title -->
+    <header id="title">
+        <h1>Red Roof Inn Survey Form</h1>
+    </header>
+
+    <main class="container">
+        <!-- Survey Form questions -->
+        <form method="GET" action="" target="_blank">
+            <h4 class="main-title">Let us know how we can improve your stay here.</h4>
+            <div class="name">
+                <div class="leftside">
+                    <label id="name">* Name:</label>
+                </div>
+                <div class="rightside">
+                    <input type="text" name="name" required>
+                </div>
+            </div>
+            <div class="email">
+                <div class="leftside">
+                    <label id="email" required>* Email:</label>
+                </div>
+                <div class="rightside">
+                    <input type="text" name="email" required>
+                </div>
+            </div>
+            <div class="age">
+                <div class="leftside">
+                    <label id="age" required>* Age:</label>
+                </div>
+                <div class="rightside">
+                    <input id="number" type="number" class="input-field" min="1" max="120" name="age" required>
+                </div>
+            </div>
+            <div class="lobby">
+                <div class="leftside">
+                    <h4>* How do you rate the lobby area?</h4>
+                </div>
+                <div class="rightside">
+                    <select class="dropdown" required>
+                        <option value="Love It">Love it</option>
+                        <option value="Ok">Ok</option>
+                        <option value="Hate It">Hate it</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <div class="room">
+                    <div class="leftside">
+                        <h4>* How do you rate your room?</h4>
+                    </div>
+                    <div class="rightside">
+                        <select class="dropdown" required>
+                            <option value="selectOne">Select one</option>
+                            <option value="Love It">Love it</option>
+                            <option value="Ok">Ok</option>
+                            <option value="Hate It">Hate it</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="staff">
+                <div class="leftside radio">
+                    <h4>* How would you rate our staff?</h4>
+                </div>
+                <div class="rightside">
+                    <ul class- "radio">
+                        <li>
+                            <input type="radio" id="staffChoice1" name="staff-radio">
+                            <label for="staffChoice1">Very Friendly</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="staffChoice2" name="staff-radio">
+                            <label for="staffChoice2">OK</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="staffChoice3" name="staff-radio">
+                            <label for="staffChoice3">Terrible</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <!-- checkbox list -->
+                <div class="amenities">
+                    <div class="leftside">
+                        <h4>* What amenities did you use while at the hotel?</h4>
+                        <p>(Check all that apply)</p>
+                    </div>
+                    <div class="rightside">
+                        <ul class="amenities-checkbox">
+                            <li>
+                                <input type="checkbox" id="pool" name="amenities" value="pool">
+                                <label for="pool">Pool</label>.
+                            </li>
+                            <li>
+                                <input type="checkbox" id="hot-tub" name="amenities" value="hot-tub">
+                                <label for="hot-tub">Hot tub</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="snack-bar" name="amenities" value="snack-bar">
+                                <label for="snack-bar">Snack Bar</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="spa" name="amenities" value="spa">
+                                <label for="spa">Spa</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="room-service" name="amenities" value="room-service">
+                                <label for="room-service">Room Service</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="gym" name="amenities" value="gym">
+                                <label for="gym">Gym Area</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="valet-parking" name="amenities" value="valet-parking">
+                                <label for="valet-parking">Valet Parking</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="breakfast-room" name="amenities" value="breakfast-room">
+                                <label for="breakfast-room">Breakfast Room</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="comments">
+                    <div class="leftside">
+                        <h4>We would love to hear your comments and suggestions:</h4>
+                    </div>
+                    <div class="rightside">
+                        <textarea rows="6" cols="40">Enter your comments....</textarea>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button type="submit">SUBMIT</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        &copy Red Roof Inn
+    </footer>
+</body>
+
+</html>
