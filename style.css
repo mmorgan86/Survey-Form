@@ -149,7 +149,7 @@ footer {
         top: 0px;
     }
     
-    .staff, .amenities {
+    .radio, .amenities-checkbox {
         text-align: left;
         position: relative;
         left: 30vw;
