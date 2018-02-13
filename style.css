@@ -25,7 +25,7 @@ form {
     max-width: 800px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
@@ -39,6 +39,7 @@ form {
     display: inline-block;
     text-align: left;
     width: 45%;
+    padding-left: 1vw;
 }
 
 label, h4 {
@@ -54,9 +55,9 @@ input {
     border: 1px solid black;
 }
 
-.radio {
-   list-style: none;
-   position: relative;
+h4 {
+    margin: 0;
+    padding: 20px 0;
 }
 
 ul {
@@ -69,12 +70,7 @@ ul {
     border: 1px solid gray;
     width: 25vw;
 }
-
-@media (max-width: 700px) {
-    textarea {
-        width: 150px;
-    }
-}
+ 
 button {
     margin: 20px 0;
 }
@@ -89,4 +85,59 @@ footer {
     font-weight: 700;
     margin: 20px;
     font-size: 16px;
+}
+
+.h4-staff {
+    display: block;
+    position: relative; 
+    top: -52px;
+}
+
+.h4-amenities {
+    display: block;
+    position: relative;
+    top: -132px;
+}
+
+.h4-comments {
+    display: block;
+    position: relative;
+    top: -85px;
+} 
+
+/* for smaller screen devices */
+@media (max-width: 700px) {
+    .leftside {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .rightside {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    input {
+        margin: 2px 0px 5px 0px;
+        padding-top: 5px;
+    }
+
+    h4 {
+        padding:10px 20px;
+    }
+
+    .input-field, textarea {
+        border: 1px solid gray;
+        width: 200px;
+    }
+
+    textarea {
+        width: 250px;
+    }
+
+    .h4-staff, .h4-amenities, .h4-comments {
+        top: 0px;
+    }
 }
