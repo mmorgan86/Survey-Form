@@ -123,14 +123,14 @@ footer {
         margin: 0 auto;
         display: block;
         text-align: center;
-        width: 100vw;
+        width: 100%;
     }
 
     .rightside {
         margin: 0 auto;
         display: block;
         text-align: center;
-        width: 100vw;
+        width: 100%;
     }
 
     input {
