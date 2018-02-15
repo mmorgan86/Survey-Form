@@ -15,37 +15,37 @@
 <body>
 
     <!-- Title -->
-    <header id="title">
-        <h1>Red Roof Hotel Survey Form</h1>
+    <header>
+        <h1 id="title">Red Roof Hotel Survey Form</h1>
     </header>
 
     <main class="container">
         <!-- Survey Form questions -->
-        <form method="GET" action="" target="_blank">
+        <form id="survey-form" method="GET" action="" target="_blank">
             <!-- Logo -->
             <div class="logo">
                 <img src="images\redroof.jpg" alt="Red Roof Inn Logo">
             </div>
-            <h4 class="main-title">Let us know how we can improve your stay here.</h4>
+            <p class="decription">Let us know how we can improve your stay here.</p>
             <div class="name">
                 <div class="leftside">
-                    <label id="name">* Name:</label>
+                    <label id="name-label">* Name:</label>
                 </div>
                 <div class="rightside">
-                    <input type="text" class="input-field" name="name" placeholder="  First and Last Name" required>
+                    <input id="name" type="text" class="input-field" name="name" placeholder="  First and Last Name" required>
                 </div>
             </div>
             <div class="email">
                 <div class="leftside">
-                    <label id="email" required>* Email:</label>
+                    <label id="email-label" required>* Email:</label>
                 </div>
                 <div class="rightside">
-                    <input type="text" class="input-field" name="email" placeholder="  Your email" required>
+                    <input id="email" type="email" class="input-field" name="email" placeholder="  Your email" required>
                 </div>
             </div>
             <div class="age">
                 <div class="leftside">
-                    <label id="age" required>* Age:</label>
+                    <label id="number-label" required>* Age:</label>
                 </div>
                 <div class="rightside">
                     <input id="number" type="number" class="input-field" min="1" max="120" name="age" placeholder="  How old are you?" required>
@@ -57,7 +57,7 @@
                     <h4>* How do you rate the lobby area?</h4>
                 </div>
                 <div class="rightside">
-                    <select class="dropdown" required>
+                    <select id="dropdown" required>
                         <option value="selectOne">Select One</option>
                         <option value="Love It">Love it</option>
                         <option value="Ok">Ok</option>
@@ -71,7 +71,7 @@
                         <h4>* How do you rate your room?</h4>
                     </div>
                     <div class="rightside">
-                        <select class="dropdown" required>
+                        <select id="dropdown" required>
                             <option value="selectOne">Select One</option>
                             <option value="clean">Clean</option>
                             <option value="ok">Ok</option>
@@ -88,15 +88,15 @@
                 <div class="rightside">
                     <ul class="radio" required>
                         <li>
-                            <input type="radio" id="staffChoice1" name="staff-radio">
+                            <input type="radio" id="staffChoice1" name="staff-radio" value="staff-Friendly">
                             <label for="staffChoice1">Very Friendly</label>
                         </li>
                         <li>
-                            <input type="radio" id="staffChoice2" name="staff-radio">
+                            <input type="radio" id="staffChoice2" name="staff-radio" value="staff-ok">
                             <label for="staffChoice2">OK</label>
                         </li>
                         <li>
-                            <input type="radio" id="staffChoice3" name="staff-radio">
+                            <input type="radio" id="staffChoice3" name="staff-radio" value="staff-terrible">
                             <label for="staffChoice3">Terrible</label>
                         </li>
                     </ul>
@@ -161,7 +161,7 @@
                 </div>
             </div>
             <div>
-                <button type="submit">SUBMIT</button>
+                <button type="submit" id="submit">SUBMIT</button>
             </div>
         </form>
     </main>
@@ -169,6 +169,7 @@
         <p>&copy Red Roof Inn</p>
     </footer>
 
+<script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
 </body>
 
 </html>
