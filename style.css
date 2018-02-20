@@ -64,6 +64,11 @@ input {
     padding-bottom: 2vh;
 }
 
+/* bold staff radio buttons */
+.checkbox label, .radio label {
+    font-weight: 700;
+}
+
  /* move radio, checkbox and textarea h4 tag */
 .h4-staff {
     display: block;
